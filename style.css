@@ -1,0 +1,132 @@
+
+body {
+  color: black;
+  font-family: Georgia;
+  font-size: 17px;
+  margin: 0;
+  margin-left:20px;
+  display: flex;
+}
+
+header {
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  height: 100px;
+  background-color: green;
+
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  width: 100%;
+  margin-top:0px;
+
+
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;        /* takes the whole and puts the nav on right side */
+  background-color: blue;
+  color = MediumAquamarine;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-grow: 0.1; /* important note */
+  margin-right: 30px;
+  font-weight: bold;
+  color: black; /* it is not working checking it out later */
+}
+
+main {
+  background-color: grey;
+  display: flex;
+
+}
+
+.columnLarge {
+  width: 630px;
+  background-color: grey;
+  border: solid 3px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 130px;
+
+}
+
+.firstcolumn {
+  background-image: url(./image/main.png);
+  height:300px;
+  display: flex;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  align-items: center;
+
+}
+
+
+.thirdcolumn {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+
+}
+
+h1 {
+  font-size: 30px;
+}
+
+
+.fourthcolumn {
+  display: flex;
+  flex-direction: row;
+}
+
+.fifthrow {
+  background-image: url(./image/story-2.png);
+  display: flex;
+  height: 300px;
+  width: 295px;
+  margin-top: 15px;
+  margin-right: 10px;
+  text-align: center;
+
+}
+
+.sixthrow {
+  background-image: url(./image/story-3.png);
+  display: flex;
+  height: 300px;
+  width: 295px;
+  margin-top: 15px;
+  margin-left: 10px;
+  text-align: center;
+
+}
+
+.fifthrow, .sixthrow, .sixthcolumn h1 {
+  color:white;
+}
+
+.columnMiddle {
+  background-color: green;
+  width: 300px;
+  border: solid 3px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 138px;
+  margin-left: 30px;
+}
+
+.sixthcolumn {
+  background-image: url(./image/story-1.png);
+  height: 300px;
+  text-align: center;
+
+}
