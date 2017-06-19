@@ -13,14 +13,13 @@ header {
   font-size: 14px;
   font-weight: bold;
   height: 100px;
-  background-color: green;
-
   display: flex;
   flex-direction: row;
   position: fixed;
   width: 100%;
   margin-top:0px;
-
+  border-bottom: solid 2px;
+  background-color: white;
 
 }
 
@@ -29,7 +28,7 @@ header {
   display: flex;
   align-items: center;
   flex-grow: 1;        /* takes the whole and puts the nav on right side */
-  background-color: blue;
+  /*background-color: blue;*/
   color = MediumAquamarine;
 }
 
@@ -41,27 +40,40 @@ nav {
   margin-right: 30px;
   font-weight: bold;
   color: black; /* it is not working checking it out later */
+
 }
 
-main {
-  background-color: grey;
+span, a {
+  color: black;
+}
+
+
+.container {
+  /*background-color: red;*/
   display: flex;
+  flex-flow: wrap row;
 
 }
 
 .columnLarge {
   width: 630px;
-  background-color: grey;
-  border: solid 3px;
+  /*background-color: grey;*/
+  /*border: solid 3px;*/
   display: flex;
   flex-direction: column;
   margin-top: 130px;
+  flex-flow: wrap column;
+  flex: auto;
+
+
 
 }
 
 .firstcolumn {
   background-image: url(./image/main.png);
-  height:300px;
+  background-repeat: no-repeat;
+  width:630px;
+  height: 300px;
   display: flex;
   color: white;
   font-size: 40px;
@@ -70,11 +82,18 @@ main {
 
 }
 
+.secondcolumn {
+  display: flex;
+  width: 630px;
+}
+
+
 
 .thirdcolumn {
   display: flex;
   flex-direction: row;
   align-content: flex-start;
+  width: 630px;
 
 }
 
@@ -115,12 +134,12 @@ h1 {
 }
 
 .columnMiddle {
-  background-color: green;
+  /*background-color: green;*/
   width: 300px;
-  border: solid 3px;
+  /*border: solid 3px;*/
   display: flex;
   flex-direction: column;
-  margin-top: 138px;
+  margin-top: 130px;
   margin-left: 30px;
 }
 
@@ -128,5 +147,68 @@ h1 {
   background-image: url(./image/story-1.png);
   height: 300px;
   text-align: center;
+  display: flex;
 
+}
+
+
+.columnSmall{
+  background-color: WhiteSmoke;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  /*border: solid 2px; */
+  color: black;
+  margin-top: 135px;
+  margin-left: 30px;
+}
+
+.seventhcolumn {
+  background-image: url(./image/bites.png);
+  height: 240px;
+  display: flex;
+}
+
+.eightcolumn, h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.eightcolumn, li {
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  display: block;
+  padding: 11px 20px;
+  border-bottom: 1px solid black;
+  
+}
+
+footer {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-flow: wrap row;
+
+
+width: 100%;
+height: 325px;
+background-color: MediumAquamarine;
+margin: auto;
+font-family: Verdana;
+font-size: 12px;
+}
+
+footer, span {
+  padding-left: 10px;
+}
+
+
+.myTitle {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
 }
